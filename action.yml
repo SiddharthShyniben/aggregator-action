@@ -1,0 +1,13 @@
+name: RSS Aggregator Action
+description: The action used in my RSS aggregator
+inputs:
+  urls:
+    description: A comma seperated string of URLs of the feeds to aggregate from
+    required: true
+  path:
+    description: The path to write the feed to
+    required: false
+    default: ./feed.json
+runs: 
+  using: 'node12'
+  main: 'index.js'
